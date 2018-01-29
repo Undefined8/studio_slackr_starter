@@ -2,6 +2,10 @@
   margin: 15px;
 }
 
+.Message img {
+  width: 30%;
+}
+
 .Message-author {
   font-weight: bold;
   font-size: 0.8rem;

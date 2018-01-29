@@ -10,7 +10,7 @@ export default class Message extends React.Component {
     
     var textContents = this.props.value.is_encrypted? base64.decode(this.props.value.contents) : this.props.value.contents;
     
-    if(textContents.endsWith('.jpg')) {
+    if(textContents.endsWith('.jpg') || textContents.endsWith('.png')) {
       textContents = <img src={textContents} alt="borked"/>;
     } else {
       var textContentsClass = this.props.value.is_encrypted ? "Message-contents-secret" : "Message-contents";
